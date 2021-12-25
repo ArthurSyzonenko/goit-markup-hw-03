@@ -10,6 +10,25 @@ body {
   ;
 }
 
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
 .list {
   list-style: none;
 }
@@ -20,6 +39,21 @@ body {
 
 /* -----header---- */
 
+.header {
+  background: #FFFFFF;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
 .header-logo-web {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
@@ -39,11 +73,17 @@ body {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
+  margin-right: 93px;
   /* identical to box height */
 
   letter-spacing: 0.03em;
+  
 
   color: #000000;
+}
+
+.header-list {
+  display: flex;
 }
 
 .header-link {
@@ -51,6 +91,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  margin-right: 50px;
 
   color: #212121;
 }
@@ -58,13 +99,20 @@ body {
 .header-link:hover {
   color: var(--blue-color);
 }
+.header-list-contact {
+  margin-left: auto;
+  display: flex;
 
+}
 .header-mail,
 .contact-tel {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: flex;
+  margin-right: 50px;
+  
 
   color: #757575;
 }
@@ -79,6 +127,9 @@ body {
 
 .hero-order {
   background: #2f303a;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   font-weight: 900;
@@ -89,31 +140,39 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  max-width: 696px;
+  max-height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  
 
   color: #ffffff;
 }
 
 .hero-order-btn {
-  width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 430px;
-
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-line-height: 1.87;
+  line-height: 1.87;
+  min-width: 200px;
+  min-height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  
 /* identical to box height, or 187% */
 
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.06em;
+  letter-spacing: 0.06em;
 
-color: #FFFFFF;
+
+  color: #FFFFFF;
 }
+  
+.info-list {
+  display: flex;
+}
+
 .info-titele {
   display: none;
 }
@@ -122,7 +181,9 @@ color: #FFFFFF;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
+  padding-top: 94px;
+  margin-right: 30px;
+  margin-bottom: 10px;
   color: #212121;
 }
 
@@ -130,6 +191,8 @@ color: #FFFFFF;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
+  margin-top: 10px;
+  margin-right: 30px;
   /* or 171% */
 
   letter-spacing: 0.03em;
@@ -137,14 +200,28 @@ color: #FFFFFF;
   color: #757575;
 }
 
+.work-list {
+  
+  display: flex;
+}
+
+.work-item {
+margin-right: 30px;
+margin-top: 50px;
+margin-bottom: 94px;
+
+}
+
 .work-titele {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 94px;
 
   color: #212121;
 }
+/*-----team-----*/
 
 .team-titele {
   font-size: 36px;
@@ -154,6 +231,32 @@ color: #FFFFFF;
 
   color: #212121;
 }
+
+.team-list {
+  display: flex;
+  margin-left: -30px;
+}
+
+.card {
+position: absolute;
+width: 270px;
+height: 368px;
+left: 215px;
+top: 1635px;
+
+background: #FFFFFF;
+/* material shadow v1 */
+
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+.team-item {
+  flex-basis: calc(100% / 4 - 90px);
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-bottom: 94px;
+}
+
 .team-list-titele {
   font-weight: 500;
   font-size: 16px;
@@ -200,7 +303,12 @@ color: #FFFFFF;
 }
 
 .footer-address {
+  padding-top: 60px;
   background: #2f303a;
+}
+
+.footer-logo {
+  
 }
 
 .footer-address {
@@ -214,6 +322,11 @@ color: #FFFFFF;
   letter-spacing: 0.03em;
 
   color: #ffffff;
+}
+
+.footer-list{ 
+  
+  
 }
 
 .footer-mail,
